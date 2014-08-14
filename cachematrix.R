@@ -13,6 +13,10 @@
 ## cache its inverse."
 ##
 ## Additionally there is a function "testCacheMatrix" which does some tests.
+## Use
+## > source("cachematrix.R")
+## > testCacheMatrix()
+## to run these tests.
 
 makeCacheMatrix <- function(x = matrix()) {
   # inv caches the inverse of the matrix;
@@ -106,4 +110,3 @@ testCacheMatrix <- function() {
   # Thus this should print NULL
   print(cm$getinverse())
 }
-
