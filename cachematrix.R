@@ -87,13 +87,13 @@ testCacheMatrix <- function() {
   # Thus this should print NULL
   print(cm$getinverse())
   
-  inv = cacheSolve(cm)
+  inv <- cacheSolve(cm)
   print(inv)
   # Here we see that the Hilbert matrix has not nice numerical properties
   print(inv %*% cm$get())
   
   # Now we get the inv again
-  inv = cacheSolve(cm)
+  inv <- cacheSolve(cm)
   # It should print the message 'getting cached data'.
   
   # See whether it's an inverse again:
